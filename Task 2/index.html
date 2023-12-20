@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ohio</title>
+  <link rel="stylesheet" href="index_styles.css">
+  <script src="validateEmail.js"></script>
+</head>
+<body>
+    <!-- Design is from https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas -->
+    <div id="page">
+        <header><h1 class="title">Ohio</h1></header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ohio</a></li>
+                <li><a href="columbus.html">Columbus</a></li>
+                <li><a href="cleveland.html">Cleveland</a></li>
+                <li><a href="dayton.html">Dayton</a></li>
+            </ul>      
+        </nav>
+        <section>
+            <img src="Images/WelcomeToOhio.jpg" alt="Welcome To Ohio">
+            <figcaption><a href="https://www.ohio.gov/" target="_blank">The official Ohio website</a></figcaption>
+        </section>
+        <aside>
+            <table>
+                <tr>
+                    <th rowspan="2">Average Income</th>
+                    <th>Columbus</th>
+                    <th>Cleveland</th>
+                    <th>Dayton</th>
+                </tr>
+                <tr>
+                    <td>$31,462</td> 
+                    <td>$21,507</td>
+                    <td>$20,015</td>
+
+                </tr>
+            </table>
+            <form>
+                <p>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="John">
+                </p>
+                <p>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Doe">
+                </p>
+                <p>
+                    <label for="email">Enter your email address:</label>
+                    <input type="email" id="email" name="email" placeholder="email@domain.com">
+                </p>
+                <p>
+                    <label for="email2">Reenter your email address:</label>
+                    <input type="email" id="email2" name="email2" placeholder="email@domain.com">
+                </p>
+                <p>
+                    <div>
+                        <p>
+                            Ask Questions Here:
+                        </p>
+                        <p>
+                            <textarea>Enter text here</textarea>
+                        </p>
+                    </div>
+                    
+                </p>
+                <p>
+                    <button onclick = "validateEmail()">Submit</button>
+                </p>
+            </form>
+        </aside>
+    </div>      
+ </body>
+</html>
+

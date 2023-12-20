@@ -1,0 +1,93 @@
+#page {
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-areas:
+      "head head head"
+      "nav nav nav"
+      "section aside aside";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+  }
+  
+header {
+    grid-area: head;
+    background-color: #8ca0ff;
+    border: 1px solid black;
+    text-align:center;
+    padding: 40px;
+  }
+
+.title {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+  }
+  
+nav {
+    grid-area: nav;
+    background-color: #ffa08c;
+  }
+  
+
+  
+aside {
+    grid-area: aside;
+    background-color: #8cffa0;
+	  display: flex;
+  }
+  
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+	  margin:20px;
+  }
+
+aside > ul {
+    list-style-type:circle;
+    float:right;
+}
+  
+  li {
+    float: left;
+    flex-grow:1;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+   /* Change the link color to #111 (black) on hover */
+   li a:hover {
+    background-color: yellow;
+    color:black;
+  }
+
+  img {
+	  max-width: 100%;
+  } 
+  
+  section {
+    grid-area: section;
+    background-color: #ffff64;
+	text-align: center;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	 
+  aside > ul, ol {
+    display: flex;
+	flex-direction: column;
+    margin: 40px;
+	width:400px;
+  }
+
+  nav > ul {
+    position: relative;
+    left: 35%;
+  }
